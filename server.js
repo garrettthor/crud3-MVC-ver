@@ -17,5 +17,5 @@ app.use('/', homeRoutes)
 app.use('/char', charRoutes)
 
 app.listen(process.env.PORT, ()=>{
-    console.log(`Server is running fuckin somewhere who fuckin knows...`)
+    console.log(`Server is running...`)
 })

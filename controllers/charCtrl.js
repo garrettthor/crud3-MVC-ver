@@ -3,9 +3,11 @@ const Char = require('../models/char')
 module.exports = {
     getChars: async (req, res) => {
         try {
-            const chars = await Char.find()
+            const characters = await Char.find()
             const activeTeam = await Char.countDocuments({activeChar: true})
-            res.render('char.ejs', {charArray: chars, active: activeTeam})
+            console.log(characters)
+            console.log(activeTeam)
+            res.render('char.ejs', {charArray: characters, active: activeTeam})
         } catch (err) {
             console.log(err)
         }

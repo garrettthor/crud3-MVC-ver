@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const CharSchema = new mongoose.Schema({
-    char: {
+    characters: {
         type: String,
         required: true,
     },
