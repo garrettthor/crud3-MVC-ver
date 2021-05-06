@@ -7,7 +7,7 @@ module.exports = {
             const activeTeam = await Char.countDocuments({activeChar: true})
             console.log(characters)
             console.log(activeTeam)
-            res.render('char.ejs', {charArray: characters, active: activeTeam})
+            res.render('char', {charArray: characters, active: activeTeam})
         } catch (err) {
             console.log(err)
         }
